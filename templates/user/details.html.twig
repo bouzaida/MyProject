@@ -1,0 +1,12 @@
+{# templates/user/details.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>User Details</h1>
+    <p><strong>ID:</strong> {{ user.id }}</p>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Job:</strong> {{ user.job }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone Number:</strong> {{ user.phoneNumber }}</p>
+    <a href="{{ path('user_list') }}">Back to list</a>
+{% endblock %}
